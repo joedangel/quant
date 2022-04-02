@@ -1,4 +1,4 @@
-from MovingAverageCalculator import MovingAverageCalculator
+from signals.MovingAverageCalculator import MovingAverageCalculator
 from CleanedPriceData import CleanedPriceData
 
 class SMATradingSignal:
@@ -9,7 +9,6 @@ class SMATradingSignal:
         self.short_sma = short_sma
         self.long_sma = long_sma
         self.long_length = long_length
-
 
         ## TEST -------------
 
