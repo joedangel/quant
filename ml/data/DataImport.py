@@ -16,7 +16,7 @@ class DataImport:
                 self.output.append(lst)
 
     def getPrices(self):
-        return [row[1] for row in self.output]
+        return [float(row[1]) for row in self.output]
 
     def getMetrics(self):
-        return [row[2:5] for row in self.output]
+        return [[float(x) for x in row[2:5]] for row in self.output]
